@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Python Slots</title>
+</head>
+
+<body>
+
+    <h1>🎰 Python Slots</h1>
+
+    <p id="balance">Balance: $100</p>
+
+    <div id="slots">
+        <span id="slot1">🍌</span>
+        <span id="slot2">🍒</span>
+        <span id="slot3">⭐️</span>
+    </div>
+
+    <br>
+
+    <input
+        id="bet"
+        type="number"
+        value="10"
+        min="1"
+    >
+
+    <button id="spin-button">
+        SPIN 🎰
+    </button>
+
+    <p id="message">{{ message }}</p>
+
+    <h2>Statistics</h2>
+
+    <p id="spins">Spins: 0</p>
+    <p id="wins">Wins: 0</p>
+    <p id="losses">Losses: 0</p>
+
+    <p id="total-bets">
+        Total Bets: $0
+    </p>
+
+    <p id="total-winnings">
+        Total Winnings: $0
+    </p>
+
+    <p id="biggest-win">
+        Biggest Win: $0
+    </p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
