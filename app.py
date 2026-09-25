@@ -37,14 +37,10 @@ def spin():
 
     # Validate bet
     if bet > balance:
-        return jsonify({
-            "error": "Insufficient funds!"
-        }), 400
+        return jsonify({"error": "Insufficient funds!"}), 400
 
     if bet <= 0:
-        return jsonify({
-            "error": "Bet must be greater than 0!"
-        }), 400
+        return jsonify({"error": "Bet must be greater than 0!"}), 400
 
     # Update statistics
     spin_count += 1
@@ -76,18 +72,20 @@ def spin():
     # Add payout
     balance += payout
 
-    return jsonify({
-        "row": row,
-        "payout": payout,
-        "balance": balance,
-        "spins": spin_count,
-        "wins": win_count,
-        "losses": loss_count,
-        "total_bets": total_bets,
-        "total_winnings": total_winnings,
-        "biggest_win": biggest_win,
-        "message": message
-    })
+    return jsonify(
+        {
+            "row": row,
+            "payout": payout,
+            "balance": balance,
+            "spins": spin_count,
+            "wins": win_count,
+            "losses": loss_count,
+            "total_bets": total_bets,
+            "total_winnings": total_winnings,
+            "biggest_win": biggest_win,
+            "message": message,
+        }
+    )
 
 
 if __name__ == "__main__":

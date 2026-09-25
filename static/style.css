@@ -1,0 +1,193 @@
+body {
+  background-color: #e8cfe0;
+  color: #4f3b50;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Main layout */
+
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Slot machine */
+
+#game {
+  background-color: #f8edf5;
+  width: 350px;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(79, 59, 80, 0.15);
+}
+
+/* Slots */
+
+#slots {
+  background-color: #f8edf5;
+  width: 300px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#slots span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  margin: 5px;
+
+  background-color: #e6d5f2;
+  border-radius: 15px;
+
+  font-size: 40px;
+
+  box-shadow: 0 4px 8px rgba(79, 59, 80, 0.15);
+
+  transition: transform 0.2s;
+}
+#slots span:hover {
+  transform: translateY(-3px);
+}
+
+/* Bet */
+#bet {
+  width: 80px;
+  padding: 10px;
+
+  border: 2px solid #c98bb9;
+  border-radius: 10px;
+
+  background-color: #fff8fc;
+  color: #4f3b50;
+
+  font-size: 16px;
+  text-align: center;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+#bet:focus {
+  border-color: #8d5a82;
+  box-shadow: 0 0 8px rgba(141, 90, 130, 0.25);
+}
+
+/* Spin button */
+#spin-button {
+  background-color: #c98bb9;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 12px 30px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+  margin-left: 10px;
+
+  box-shadow: 0 4px 8px rgba(79, 59, 80, 0.2);
+
+  transition: all 0.2s;
+}
+
+#spin-button:hover {
+  background-color: #b878a8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(79, 59, 80, 0.25);
+}
+
+#spin-button:active {
+  transform: translateY(1px);
+}
+
+/* Balance */
+
+#balance {
+  display: inline-block;
+
+  background-color: #f8edf5;
+
+  padding: 10px 20px;
+
+  border-radius: 12px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  color: #8d5a82;
+
+  box-shadow: 0 4px 10px rgba(79, 59, 80, 0.12);
+}
+
+/* Message */
+
+#message {
+  min-height: 24px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-top: 20px;
+
+  color: #8d5a82;
+}
+
+/* Statistics */
+#statistics {
+  background-color: #f8edf5;
+
+  width: 170px;
+  height: 300px;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(79, 59, 80, 0.15);
+}
+
+#statistics p {
+  background-color: #fff8fc;
+
+  border-radius: 10px;
+  text-align: center;
+
+  font-size: 14px;
+}
+
+#statistics h2 {
+  margin-top: 0;
+
+  text-align: center;
+
+  color: #8d5a82;
+
+  margin-bottom: 20px;
+}
+
+/* Side image */
+
+#side-image img {
+  width: 180px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}

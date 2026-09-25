@@ -1,6 +1,6 @@
-# Python Slot Machine
+# Python Slot Machine 
 
-A simple slot machine game made with Python.
+A simple slot machine game built with Python and Flask.
 
 ## Features
 
@@ -8,15 +8,19 @@ A simple slot machine game made with Python.
 * Betting system
 * Balance tracking
 * Win and lose conditions
+* Game statistics
+* Web interface
 
 ## How to Run
 
 Make sure Python is installed, then run:
 
 ```bash
-python main.py
+python app.py
 ```
+
+Then open the local address in your browser.
 
 ## Note
 
-This project was created while following a Python tutorial and was customized by changing some of the game elements.
+This project was originally created while following a Python tutorial and was later customized and upgraded with Flask, HTML, CSS, and JavaScript.
